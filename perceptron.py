@@ -1,4 +1,4 @@
-# Basic Neural Network class with a single hidden layer and linear activation
+# Basic Perceptron class
 import numpy as np
 
 class Perceptron(object):
