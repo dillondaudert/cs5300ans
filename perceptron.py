@@ -13,14 +13,14 @@ class Perceptron(object):
         """Predict the class of sample x. (Forward pass)"""
         pass
 
-    def _delta(self, y_hat, y):
+    def _delta(self, x, y_hat, y):
         """
-        Given predictions y_hat and targets y, calculate the weight
+        Given inputs x, predictions y_hat and targets y, calculate the weight
         update delta.
         """
         pass
 
-    def _update_weights(delta):
+    def _update_weights(self, delta):
         """
         Update the weights by delta.
         """
@@ -35,7 +35,7 @@ class Perceptron(object):
         Returns the predictions y_hat.
         """
         y_hat = self.predict(x)
-        delta = self._delta(y_hat, y)
+        delta = self._delta(x, y_hat, y)
         self._update_weights(delta)
         return y_hat
 
